@@ -256,7 +256,7 @@ finish:
 End Sub
 ```
 ### SQL Server
-Obviously, Excel wasn't very happy with nearly 11 million rows of data in a single workbook, so I imported the data to SQL server using the SSIS Import wizard. I could have written a VBA script to do it (or, better yet, skip the spreadsheet and just download it directly into the database), but I figured I'd see if the wizard was useful. It worked OK, but it forced me to import one sheet at a time, since no two sheets could target the same table in the database on a single import.
+Obviously, Excel wasn't very happy with nearly 11 million rows of data in a single workbook, so I imported the data to SQL Server using the SSIS Import Wizard. I could have written a VBA script to do it (or, better yet, skip the spreadsheet and just download it directly into the database), but I figured I'd see if the wizard was useful. It worked OK, but it forced me to import one sheet at a time, since no two sheets could target the same table during a single import.
 
 Here's the T-SQL for my table showing the data types I used. I added the primary key later using Visual Studio 2015 to guard against duplicate entries.
 ```
