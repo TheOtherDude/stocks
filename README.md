@@ -323,7 +323,7 @@ ADD SMA14 AS dbo.Last14Avg(Date, Symbol) ;
 ```
 Now I can easily find the simple moving average for any row in the database.
 ```
-SELECT Top 25 Symbol, Date, [Adj Close], SMA14
+SELECT Top 15 Symbol, Date, [Adj Close], SMA14
 FROM HData
 WHERE Symbol = 'BRK.A' 
 ORDER BY Date Desc ;
